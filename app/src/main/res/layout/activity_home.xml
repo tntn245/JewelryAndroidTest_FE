@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activity_test1"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F0F1F6">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:elevation="8dp"
+        android:text="Component 1"
+        android:background="@drawable/component_calendar_home">
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:dateTextAppearance="@style/CustomCalendarText" />
+
+<!--        <GridView-->
+<!--            android:id="@+id/gridViewCalendar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:numColumns="7"-->
+<!--            android:stretchMode="columnWidth"-->
+<!--            android:verticalSpacing="10dp"-->
+<!--            android:horizontalSpacing="10dp"/>-->
+
+    </LinearLayout>
+
+    <!-- Component 2 -->
+    <LinearLayout
+        android:id="@+id/customView"
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        android:background="@drawable/custom_background_login"
+        android:elevation="8dp"
+        android:layout_margin="25dp"
+        android:padding="18dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="#4E368B"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textColor="#BC37A4"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sessions"
+                android:textColor="#75B7E6"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/group_1000000902" />
+    </LinearLayout>
+
+    <!-- Component 3 -->
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:elevation="8dp"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/camera_background_home"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="0.5"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/icon_camera" />
+            <TextView
+                android:id="@+id/textViewCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:layout_marginBottom="15dp"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/camera_background_home"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="0.5"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/icon_history" />
+            <TextView
+                android:id="@+id/textViewHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="History"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- button_background.xml -->
+<!-- button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="30dp" />
+    <gradient
+        android:startColor="#BBAAE7"
+        android:endColor="#4D358A"
+        android:angle="90" />
+    <stroke
+        android:width="1px"
+        android:color="#BBAAE7" />
+</shape>
+

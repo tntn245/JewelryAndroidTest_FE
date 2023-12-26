@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activity_test1"
+    android:orientation="vertical"
+    android:gravity="center">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:context=".activity_test1"
+      android:gravity="center"
+      android:layout_marginTop="76dp"
+      >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ukiyo_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ukiyo_2" />
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="0.5"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      app:srcCompat="@drawable/picture3" />
+
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Jewelry Detection"
+      android:textColor="#000000"
+      android:textSize="24sp"
+      android:fontFamily="sans-serif"
+      android:textStyle="bold"
+      />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Find ways to detect quickly"
+      android:textColor="#000000"
+      android:textSize="15sp"
+      android:fontFamily="sans-serif"
+      android:textStyle="normal"
+      />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Get Started"
+      android:background="@drawable/button_get_started"
+      android:textColor="#FFFFFF"
+      android:textSize="16sp"
+      android:layout_marginTop="50dp"
+      android:layout_marginBottom="76dp"
+      android:elevation="8dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

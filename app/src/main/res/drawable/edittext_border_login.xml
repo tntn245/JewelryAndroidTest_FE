@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edittext_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#CCFFFFFF"/> <!-- Màu nền -->
+    <stroke
+        android:width="2dp"
+        android:color="#4D358A"/>
+    <corners android:radius="30dp"/> <!-- Độ cong border -->
+</shape>
